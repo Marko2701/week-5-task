@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <title>GitHub user search app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <div class="header">
+        <h1 class="header__title">devfinder</h1>
+        <div class="header__btn-mode">
+          <p class="header__mode-text">DARK</p>
+          <div class="header__icon-container"><img class="header__mode-icon" src="assets/icon-moon.svg" alt=""></div>
+        </div>
+      </div>
+
+      <div class="searchbar-container active">
+        <label class="searchbar__label" for="input">
+          <input class="searchbar__input" type="search" name="user-input" id="input" placeholder="Search Github username...">
+        </label>
+        <button class="searchbar__btn-search searchbar__submit">Search</button>
+        <div class="searchbar__error">
+          <p class="searchbar__no-results">No results</p>
+        </div>
+      </div>
+
+      <div class="profile-container">
+        <div class="profile__content">
+          <div class="profile__header">
+            <img class="profile__avatar" src="" alt="">
+            <div class="profile__info-wrapper">
+              <div class="profile__name-wrapper">
+                <h2 class="profile__name"></h2>
+                <p class="profile__user"></p>
+              </div>
+              <p class="profile__date"></p>
+            </div>
+          </div>
+          <p class="profile__bio"></p>
+          <div class="profile__stats-wrapper">
+            <div class="profile__stat">
+              <p class="profile__stat-title">Repos</p>
+              <p class="profile__repos profile__stat-value"></p>
+            </div>
+            <div class="profile__stat">
+              <p class="profile__stat-title">Followers</p>
+              <p class="profile__followers profile__stat-value"></p>
+            </div>
+            <div class="profile__stat">
+              <p class="profile__stat-title">Following</p>
+              <p class="profile__following profile__stat-value"></p>
+            </div>
+          </div>
+          <div class="profile__bottom-wrapper">
+            <div class="profile__info">
+              <div class="profile__bottom-icons"><img src="assets/icon-location.svg" alt=""></div>
+              <p class="profile__location"></p>
+            </div>
+            <div class="profile__info">
+              <div class="profile__bottom-icons"><img src="assets/icon-website.svg" alt=""></div>
+              <a class="profile__page" href=""></a>
+            </div>
+            <div class="profile__info">
+              <div class="profile__bottom-icons"><img src="assets/icon-twitter.svg" alt=""></div>
+              <p class="profile__twitter"></p>
+            </div>
+            <div class="profile__info">
+              <div class="profile__bottom-icons"><img src="assets/icon-company.svg" alt=""></div>
+              <p class="profile__company"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="main.js"></script>
+</body>
+</html>
